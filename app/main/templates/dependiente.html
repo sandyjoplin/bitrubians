@@ -1,0 +1,90 @@
+<ion-view view-title="main module">
+    <ion-content class="">
+        <ul class="row miTab" align="center">
+            <li class="col50 miTab-item" ng-click="cambiarTabUno()"><a>Datos generales</a></li>
+            <li class="col50 miTab-item" ng-click="cambiarTabUno()"><a>Historial clinico</a></li>
+        </ul>
+        <div ng-show="tabUno">
+            <div class="backPerfil1">
+                <div class="row" style="width: 100%;">
+                    <div class="col-25"> </div>
+                    <div class="col-50" align="center">
+                        <div class="backImg6"> <img src="main/assets/images/perfil1.jpg" class="img10" alt=""> </div>
+                        <p class="fontNegro1">Eduin Hernandez</p>
+                        <p class="fontGris4">Hermano</p>
+                        <p class="fontVerde6">Ciudad de México</p>
+                    </div>
+                    <div class="col-25"> </div>
+                </div>
+            </div>
+            <div class="" style="margin-top:80px;">
+                <div class="row padding10Top" align="center">
+                    <div class="col-50 col-offset-25 ">
+                        <div class="izquierda"> <img src="main/assets/images/icono/54.png" width="35px" alt="">
+                            <p class="fontAzul8">Mensaje</p>
+                        </div>
+                        <div class="derecha"> <img src="main/assets/images/icono/53.png" width="35px" alt="">
+                            <p class="fontAzul8">Donación</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="divider"></div>
+                <div class="row row-center padding5Top">
+                    <div class="col-10"> <img src="main/assets/images/icono/29.png" class="derecha" width="20px" alt=""> </div>
+                    <div class="col-75 padding10Lef">
+                        <p class="fontAzul">Datos Personales</p>
+                    </div>
+                    <div class="col-10" align="center"> <img src="main/assets/images/icono/23.png" class="derecha" width="20px" alt=""> </div>
+                </div>
+                <div class="divider"></div>
+                <div class="row row-center padding5Top">
+                    <div class="col-10" align="center"> <img src="main/assets/images/icono/22.png" class="derecha" width="20px" alt=""> </div>
+                    <div class="col-75 padding10Lef">
+                        <p class="fontAzul">Datos Clinicos</p>
+                    </div>
+                    <div class="col-10" align="center"> <img src="main/assets/images/icono/23.png" class=" derecha" width="20px" alt=""> </div>
+                </div>
+                <div class="divider"></div>
+                <div class="row row-center padding5Top">
+                    <div class="col-10" align="center"> <img src="main/assets/images/icono/28.png" class="derecha" width="20px" alt=""> </div>
+                    <div class="col-75 padding10Lef">
+                        <p class="fontAzul">Seguros</p>
+                    </div>
+                    <div class="col-10" align="center"> <img src="main/assets/images/icono/23.png" class=" derecha" width="20px" alt=""> </div>
+                </div>
+                <div class="divider"></div>
+            </div>
+            <div align="center">
+                <div class="bloque2"> <img src="main/assets/images/icono/27.png" width="35px;" alt="">
+                    <p class="fontAzul8">Salir</p>
+                    <br> </div>
+            </div>
+        </div>
+        <div ng-show="tabdos">
+            <br>
+            <p class="fontNegro text-center">Padecimientos en el último año</p>
+            <div class="row bloque1" align="center">
+                <div class="col-50"> <img src="main/assets/images/cuerpo.png" width="100px" alt=""> </div>
+                <div class="col-50"> <img src="main/assets/images/cuerpo1.png" width="100px" alt=""> </div> <img src="main/assets/images/icono/106.png" class="imgExpediente" alt=""> </div>
+            <div>
+                <div class="divider"></div>
+                <div class="row row-center padding5Top" ui-sref="main.consultasPasadas">
+                    <div class="col-10"> <img src="main/assets/images/icono/9.png" class="derecha" width="20px" alt=""> </div>
+                    <div class="col-75 padding10Lef">
+                        <p class="fontAzul">Consultas pasadas</p>
+                    </div>
+                    <div class="col-10" align="center"> <img src="main/assets/images/icono/23.png" class="derecha" width="20px" alt=""> </div>
+                </div>
+                <div class="divider"></div>
+                <div class="row row-center padding5Top" ui-sref="main.historicoRecetas">
+                    <div class="col-10"> <img src="main/assets/images/icono/30.png" class="derecha" width="20px" alt=""> </div>
+                    <div class="col-75 padding10Lef">
+                        <p class="fontAzul">Histórico de recetas</p>
+                    </div>
+                    <div class="col-10" align="center"> <img src="main/assets/images/icono/23.png" class="derecha" width="20px" alt=""> </div>
+                </div>
+                <div class="divider"></div>
+            </div>
+        </div>
+    </ion-content>
+</ion-view>
